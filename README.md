@@ -8,7 +8,7 @@ Basically python (prefferably 2)should be install,if you havent done this yet yo
 if you arent new to linux or termux the you probably know the git clone command which install the script and saves it into a BabyMux folderfor those who may not know this well the process is down below
 <ul>
 <li><code>cd</li></code>
-<li><code>ls<li></code>
+<li><code>ls</li></code>
 <li><code>cd BabyMux</li></code>
 <li><code>python main.py</li></code>
 </ul>
