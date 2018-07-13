@@ -59,7 +59,7 @@ def main():
         hydra()
     elif babymux == '13':
         breacher
-    elif mars == '14':
+    elif babymux == '14':
         batch-download()
     elif babymux == '00':
         sys.exit()
