@@ -1,5 +1,6 @@
 # BabyMux
 <h3><span>INTRODUCTION</span></h3>
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww1-lw.xda-cdn.com%2Ffiles%2F2017%2F03%2Ftermux.jpg&imgrefurl=https%3A%2F%2Fwww.xda-developers.com%2Ftermux-the-ultimate-linux-terminal-emulator-for-android-xda-spotlight%2F&docid=4bJFhVQkb4WelM&tbnid=OxW_OvePqy7ZjM%3A&vet=10ahUKEwibl4WCvpzcAhVDUBQKHXOWARQQMwg_KAQwBA..i&w=1200&h=712&bih=918&biw=1280&q=termux%20images&ved=0ahUKEwibl4WCvpzcAhVDUBQKHXOWARQQMwg_KAQwBA&iact=mrc&uact=8">
 <br>  
 BabyMux is an linux automization tool for linux os.It provides pentesters,ethical hackers with links to github hub tools without them having to copy everytime the links, pasting it and making the necessary modifications.This tools is available for free under the general public license so everyone is free to copy,modify and do whatever you want to do with it.
 <h3><span>REQUIREMENTS</span></h3>
