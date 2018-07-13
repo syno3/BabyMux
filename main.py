@@ -33,35 +33,35 @@ def main():
     print"13-batch-download\n"
     print"00-exit mars"
     
-    mars = int(raw_input("select your values>>\s"))
+    babymux = int(raw_input("select your values>>\s"))
     
-    if mars =='1' or mars == '01':
+    if babymux =='1' or mars == '01':
         metaspoilt()
-    elif mars == '2' or mars == '02':
+    elif babymux == '2' or mars == '02':
         nmap()
-    elif mars == '3' or mars == '03':
+    elif babymux == '3' or mars == '03':
         wireshark()
-    elif mars == '4' or mars == '04':
+    elif babymux == '4' or mars == '04':
         Zmap()
-    elif mars == '5' or mars == '05':
+    elif babymux == '5' or mars == '05':
         scapy()
-    elif mars == '6' or mars == '06':
+    elif babymux == '6' or mars == '06':
         subBrute-force()
-    elif mars == '7' or mars == '07':
+    elif babymux == '7' or mars == '07':
         sqlmap()
-    elif mars == '9' or mars == '08':
+    elif babymux == '9' or mars == '08':
         xshell()
-    elif mars == '10':
+    elif babymux == '10':
         red-hawk()
-    elif mars == '11':
+    elif babymux == '11':
         routerspoilt()
-    elif mars == '12':
+    elif babymux == '12':
         hydra()
-    elif mars == '13':
+    elif babymux == '13':
         breacher
     elif mars == '14':
         batch-download()
-    elif mars == '00':
+    elif babymux == '00':
         sys.exit()
     else:
         print "\n please enter a valid input"
