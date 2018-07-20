@@ -14,7 +14,7 @@ routerspoilt = https://github.com/Tuhinshubhra/RED_HAWK
 breacher = https://github.com/UltimateHackers/Breacher
 	
 def metaspoilt():   
-    print "====downloading metaspoilt"
+    print "====downloading metaspoilt\n"
 	os.system("apt update && apt upgrade")
 	os.system("apt install git wget curl")
 	os.system("wget metaspoilt ")
@@ -28,7 +28,7 @@ def nmap():
 	print '===== Done'
     print "===== Type 'nmap' to start."
 def hulk():
-    print"====downlaoding hulk"
+    print"====downlaoding hulk\n"
 	os.system("git clone hulk")
 	os.system("mv Hulk ~\n")
 	permission = raw_input("do you want to test hulk [Y/N]")
@@ -36,7 +36,7 @@ def hulk():
 		website = raw_input("please enter the vulnerable website")
 		os.system("cd ~;cd hulk;python hulk.py website")
 	else:
-		print "===download done"
+		print "===download done\n"
 		time.sleep(300)
 		sys.exit()		  
 def zmap():
@@ -45,7 +45,7 @@ def zmap():
 	os.sytem("sudo apt install zmap")
 	print"====downloading done"	
 def scapy():
-    print"====downloading scapy"
+    print"====downloading scapy\n"
 	os.system("apt upgarde && apt update")
 	os.system("git clone scapy")
 	permission = raw_input("do you want to run scapy [Y/N]")
@@ -57,7 +57,7 @@ def scapy():
 		time.sleep(300)
 		sys.exit()	
 def subBrute-force():
-    print"====downloading subBrute-force"
+    print"====downloading subBrute-force\n"
 	os.system("apt upgrade && apt upgrade")
 	os.system("git clone subBrute-force")
 	permission = raw_input("do you want to test subbrute-force [Y/N]")
@@ -72,14 +72,14 @@ def subBrute-force():
 		time.sleep(300)
 		sys.exit()
 def sqlmap():
-    print '===== downloading sqlmap'
+    print '===== downloading sqlmap\n'
 	os.system('apt update && apt upgrade')
 	os.system('apt install git python2')
 	os.system('git clone sqlmap')
 	os.system('mv sqlmap ~')
 	print '====Done'
 def xshell():
-    print '=====downloading Xshell'
+    print '=====downloading Xshell\n'
 	os.system("apt update && apt upgrade")
 	os.system("apt install lynx python2 figlet ruby php nano w3m")
 	os.system("git clone xshell")
