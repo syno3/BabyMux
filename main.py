@@ -20,7 +20,7 @@ def main():
     print "select the values for the options of tools available\n"
     print"1-metaspoilt"
     print"2-nmap"
-    print"3-wireshark"
+    print"3-hulk"
     print"4-Zmap"
     print"5-scapy"
     print"6-subBrute-force"
@@ -40,7 +40,7 @@ def main():
     elif babymux == '2' or mars == '02':
         nmap()
     elif babymux == '3' or mars == '03':
-        wireshark()
+        hulk()
     elif babymux == '4' or mars == '04':
         Zmap()
     elif babymux == '5' or mars == '05':
