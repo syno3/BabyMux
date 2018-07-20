@@ -148,7 +148,7 @@ def batch-download():
 			print '===== downloading sqlmap\n'
 			os.system('apt update && apt upgrade')
 			os.system('apt install git python2')
-			os.system('git clone https://github.com/sqlmapproject/sqlmap')
+			os.system('git clone sqlmap')
 			time.sleep(300)
 			print '=====downloading Xshell\n'
 			os.system("apt update && apt upgrade")
@@ -173,8 +173,8 @@ def batch-download():
 			print"===download done\n\n"
 			time.sleep(300)
 			print "=====downloading hydra\n"
-    		os.system("apt upgarde && apt update")
-    		os.system("apt install hydra")
+    			os.system("apt upgarde && apt update")
+    			os.system("apt install hydra")
    		 	print"======done\n"
 			time.sleep(300)
 			print '=====downloading Breacher\n'
