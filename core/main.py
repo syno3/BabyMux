@@ -22,13 +22,13 @@ def metaspoilt():
 	print '=====Done'
 	print "===== Type 'msfconsole' to start."
 def nmap():
-    print '=====downloading Nmap\n'
+	print '=====downloading Nmap\n'
 	os.system('apt update && apt upgrade')
 	os.system('apt install nmap')
 	print '===== Done'
-    print "===== Type 'nmap' to start."
+	print "===== Type 'nmap' to start."
 def hulk():
-    print"====downlaoding hulk\n"
+	print"====downlaoding hulk\n"
 	os.system("git clone hulk")
 	os.system("mv Hulk ~\n")
 	permission = raw_input("do you want to test hulk [Y/N]")
@@ -173,8 +173,8 @@ def batch-download():
 			print"===download done\n\n"
 			time.sleep(300)
 			print "=====downloading hydra\n"
-    			os.system("apt upgarde && apt update")
-    			os.system("apt install hydra")
+    		os.system("apt upgarde && apt update")
+    		os.system("apt install hydra")
    		 	print"======done\n"
 			time.sleep(300)
 			print '=====downloading Breacher\n'
