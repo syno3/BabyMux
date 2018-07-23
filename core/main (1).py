@@ -119,7 +119,7 @@ def batch-download():
         os.system("apt upgrade && apt update")
         try:
 			print"===downloading metaspoilt\n"
-            os.system("apt update && apt upgrade")
+           	 os.system("apt update && apt upgrade")
 			os.system("apt install git wget curl")
 			os.system("wget metaspoilt ")
 			time.sleep(300)
