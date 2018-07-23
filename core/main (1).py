@@ -10,7 +10,7 @@ subBrute-force = https://github.com/TheRook/subbrute
 sqlmap = https://github.com/sqlmapproject/sqlmap
 xshell = https://github.com/Ubaii/Xshell
 red-hawk = https://github.com/Tuhinshubhra/RED_HAWK
-routerspoilt = https://github.com/reverse-shell/routersploit1
+routerspoilt = https://github.com/reverse-shell/routersploit
 breacher = https://github.com/UltimateHackers/Breacher
 	
 def metaspoilt():   
