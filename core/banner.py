@@ -1,1 +1,2 @@
-
+def test():
+    print("BabyMux")
