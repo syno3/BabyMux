@@ -1,22 +1,22 @@
-#usr/bin/python
+#!/usr/bin/env python
 
 __author__ = "festus murimi"
 __title__ = "BabyMux"
-__python version__ = "v2.7.13"
+__python_version__ = "v2.7.13"
 __copyright__ = "copyright 2018, GPl v3.0"
 #=================================
 
 #importing modules needed
 
-import time 
+import time
 import os
 import sys
-
+from core import banner
 
 def main():
-#dispalys number for different hackimg tools
-    banner()
-    time.sleep(300)
+#displays number for different hacking tools
+    banner.test()
+    time.sleep(3)
     print "select the values for the options of tools available\n"
     print"1-metaspoilt"
     print"2-nmap"
@@ -32,24 +32,24 @@ def main():
     print"12-breacher"
     print"13-batch-download\n"
     print"00-exit mars"
-    
-    babymux = int(raw_input("select your values>>\s"))
-    
-    if babymux =='1' or mars == '01':
+
+    babymux = raw_input("select your values>>")
+
+    if babymux =='1' or babymux == '01':
         metaspoilt()
-    elif babymux == '2' or mars == '02':
+    elif babymux == '2' or babymux == '02':
         nmap()
-    elif babymux == '3' or mars == '03':
+    elif babymux == '3' or babymux == '03':
         hulk()
-    elif babymux == '4' or mars == '04':
+    elif babymux == '4' or babymux == '04':
         Zmap()
-    elif babymux == '5' or mars == '05':
+    elif babymux == '5' or babymux == '05':
         scapy()
-    elif babymux == '6' or mars == '06':
+    elif babymux == '6' or babymux == '06':
         subBrute-force()
-    elif babymux == '7' or mars == '07':
+    elif babymux == '7' or babymux == '07':
         sqlmap()
-    elif babymux == '9' or mars == '08':
+    elif babymux == '9' or babymux == '08':
         xshell()
     elif babymux == '10':
         red-hawk()
@@ -58,7 +58,7 @@ def main():
     elif babymux == '12':
         hydra()
     elif babymux == '13':
-        breacher
+        breacher()
     elif babymux == '14':
         batch-download()
     elif babymux == '00':
@@ -67,5 +67,6 @@ def main():
         print "\n please enter a valid input"
         time.sleep(100)
         restart()
+
 if __name__ == "__main__":
 	main()
