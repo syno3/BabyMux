@@ -65,7 +65,7 @@ def main():
         sys.exit()
     else:
         print "\n please enter a valid input"
-        time.sleep(100)
+        time.sleep(3)
         restart()
 
 if __name__ == "__main__":
