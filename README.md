@@ -1,5 +1,5 @@
 # BabyMux
-<h3><span>INTRODUCTION</span></h3>g
+<h3><span>INTRODUCTION</span></h3>
 <br>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-z3eF1QUNBsAmKdamrTUMPPzjKI87kTX5F8ZZEJuiIeE1qwOh" alt="termux_png">
 BabyMux is an linux automization tool for linux os.It provides pentesters,ethical hackers with links to github hub tools without them having to copy everytime the links, pasting it and making the necessary modifications.This tools is available for free under the general public license so everyone is free to copy,modify and do whatever you want to do with it.
