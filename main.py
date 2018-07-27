@@ -13,6 +13,7 @@ import os
 import sys
 import subprocess
 from core import banner
+from core import core
 
 #banner before menu
 banner.test()
