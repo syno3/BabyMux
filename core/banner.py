@@ -1,5 +1,5 @@
 def test():
-    print ("_________")
+    print (" _________")
     print ("< BabyMux >")
     print (" ---------")
     print ("        \   ^__^")
