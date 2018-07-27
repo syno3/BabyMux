@@ -13,6 +13,11 @@ import os
 import sys
 from core import banner
 
+#Request for r007 access
+if os.getuid() != 0:
+	print("You need root access to run Babymux\n Use sudo")
+	sys.exit(0)
+
 def main():
 #displays number for different hacking tools
     banner.test()
