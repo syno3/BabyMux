@@ -54,6 +54,11 @@ def main():
         print ("MSF installed at ~/metasploit-framework/ and added to path")
         time.sleep(3)
         main()
+# scapy
+    def scapy():
+        print subprocess.Popen("python2 -m pip install --user scapy", shell=True, stdout=subprocess.PIPE).stdout.read()
+        time.sleep(3)
+        main()
 
     if babymux =='1' or babymux == '01':
         metasploit()
