@@ -41,31 +41,10 @@ def main():
     print"11-hydra - password bruteforce"
     print"12-breacher"
     print"13-batch-download\n"
-    print"00-exit mars"
+    print"00-exit babyMux"
 
     babymux = raw_input("Select a tool to install>>")
-
-# make a global do something
-    def nmap():
-        print subprocess.Popen("apt-get install -y nmap", shell=True, stdout=subprocess.PIPE).stdout.read()
-        time.sleep(3)
-        main()
-
-# metasploit for termux
-    def metasploit():
-        print subprocess.Popen("git clone --recursive https://github.com/Hax4us/Metasploit_termux", shell=True, stdout=subprocess.PIPE).stdout.read()
-        time.sleep(1)
-        print subprocess.Popen("chmod +x Metasploit_termux/metasploit.sh && bash Metasploit_termux/metasploit.sh", shell=True, stdout=subprocess.PIPE).stdout.read()
-        time.sleep(1)
-        print ("MSF installed at ~/metasploit-framework/ and added to path")
-        time.sleep(3)
-        main()
-# scapy
-    def scapy():
-        print subprocess.Popen("python2 -m pip install --user scapy", shell=True, stdout=subprocess.PIPE).stdout.read()
-        time.sleep(3)
-        main()
-
+ 
     if babymux =='1' or babymux == '01':
         metasploit()
     elif babymux == '2' or babymux == '02':
