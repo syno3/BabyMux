@@ -190,3 +190,4 @@ def batch_download():
 			traceback.print_exc(file=sys.stdout)
 			print"Some Packages have not been downloaded\n Please check your Internet connection"
 			time.sleep(3)
+			return batch_download()
