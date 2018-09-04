@@ -32,5 +32,5 @@ banner3="  '\033[93m'
 ▄█████████▀    ███    █▀  ▄█████████▀   ▀█████▀    ▀█   ███   █▀  ████████▀  ████       ███▄ 
                                                                                              "
 banners=[banner1, banner2, banner3]
-def banner():
+def test():
      random.choice(banners)
