@@ -1,6 +1,6 @@
 # BabyMux
 <h3><b>Getting started</h3></b>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-z3eF1QUNBsAmKdamrTUMPPzjKI87kTX5F8ZZEJuiIeE1qwOh" alt="termux_png">
+
 BabyMux is an linux automization tool for linux os.It provides pentesters,ethical hackers with links to github hub tools without them having to copy everytime the links, pasting it and making the necessary modifications.This tools is available for free under the general public license so everyone is free to copy,modify and do whatever you want to do with it.
 <h3><span>Prerequisites</b></h3>
 Basically python (prefferably 2.x)should be install,if you havent done this yet you can do it simply by the <code>apt-get install python</code> command and also have git installed in your machine
