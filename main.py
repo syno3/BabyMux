@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-__author__ = "festus murimi"
+__author__ = "festus murimi and Tendel"
 __title__ = "BabyMux"
 __python_version__ = "v2.7.13"
 __copyright__ = "copyright 2018, GPl v3.0"
@@ -14,44 +14,37 @@ import sys
 import subprocess
 from core import banner
 from core import core
+import platform
 #terminal colors
+#please do not use terminal colors manualy, there is a python lib called termcolor 
 
-HEADER = '\033[95m'
-OKBLUE = '\033[94m'
-OKGREEN = '\033[92m'
-WARNING = '\033[93m'
-FAIL = '\033[91m'
-ENDC = '\033[0m'
-BOLD = '\033[1m'
-UNDERLINE = '\033[4m'
-
-#banner before menu
-banner.test()
-time.sleep(3)
-
-#Request for r007 access
+#getting errors in displaying the banner, SyntaxError: Non-ASCII character '\xe2' on line 5 of banner.py 
+#need root access to run the script
 if os.getuid() != 0:
-	print("You need root access to run Babymux\n Use sudo")
+	print("You need root access to run Babymux\nUse sudo")
 	sys.exit(0)
+if ("debian" not in platform.platform() or "ubuntu" not in platform.platform()):
+    print("This script was built to be run on debian like distros, you will need apt to run this script\nIf this is an false postive please report an issue to the github page")
+    sys.exit(1)
 
 def main():
-#displays number for different hacking tools
+#displays number for different tools
     print "BabyMux recommends the following tools:"
-    time.sleep(1)
-    print"WARNING+1-metasploit - exploitation"
-    print"WARNING+2-nmap - Discovery/OSINT/Vulnerability Analysis"
-    print"WARNING+3-hulk - Stress teet"
-    print"WARNING+4-Zmap - very fast scanner"
-    print"WARNING+5-scapy"
-    print"WARNING+6-subBrute-force"
-    print"WARNING+7-sqlmap - SQLi/XSS Discovery/Exploitation"
-    print"WARNING+8-xshell"
-    print"WARNING+9-redhawk"
-    print"WARNING+10-routersploit - exploitation"
-    print"WARNING+11-hydra - password bruteforce"
-    print"WARNING+12-breacher"
-    print"WARNING+13-batch-download\n"
-    print"WARNING+00-exit babyMux"
+    print"1-metasploit - exploitation"
+    print"2-nmap - Discovery/OSINT/Vulnerability Analysis"
+    print"3-hulk - Stress teet"
+    print"4-Zmap - very fast scanner"
+    print"5-scapy"
+    print"6-subBrute-force"
+    print"7-sqlmap - SQLi/XSS Discovery/Exploitation"
+    print"8-xshell"
+    print"9-redhawk"
+    print"10-routersploit - exploitation"
+    print"11-hydra - password bruteforce"
+    print"12-breacher"
+    print"13-gobuster"
+    print"14-batch-download all\n"
+    print"00-exit babyMux"
 
     babymux = raw_input("Select a tool to install>>")
  
@@ -69,24 +62,28 @@ def main():
         subBrute-force()
     elif babymux == '7' or babymux == '07':
         sqlmap()
-    elif babymux == '9' or babymux == '08':
+    elif babymux == '8' or babymux == '08':
         xshell()
-    elif babymux == '10':
+    elif babymux == '9':
         red-hawk()
-    elif babymux == '11':
+    elif babymux == '10':
         routersploit()
-    elif babymux == '12':
+    elif babymux == '11':
         hydra()
-    elif babymux == '13':
+    elif babymux == '12':
         breacher()
-    elif babymux == '14':
+    elif babymux == '13':
+        gobuster()
+    elif babymux == '14'
         batch-download()
-    elif babymux == '00':
+    elif babymux == '00' or babymux == "0":
         sys.exit()
     else:
-        print "\n please enter a valid input"
-        time.sleep(3)
-        return main()
+        print "\nPlease enter a valid input"
+        main()
+    return
 
 if __name__ == "__main__":
-	main()
+    print "updating packages"
+    os.system("apt update && apt upgrade")
+    main()

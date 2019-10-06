@@ -14,10 +14,8 @@ xshell = 'https://github.com/Ubaii/Xshell'
 red_hawk = 'https://github.com/Tuhinshubhra/RED_HAWK'
 routerspoilt = 'https://github.com/reverse-shell/routersploit'
 breacher = 'https://github.com/UltimateHackers/Breacher'
-
 def metaspoilt():
 	print "====downloading metaspoilt\n"
-	os.system("apt update && apt upgrade")
 	os.system("apt install git wget curl")
 	os.system("wget metaspoilt ")
 	os.system("mv msfinstall.sh ~;cd ~;sh msfinstall.sh")
@@ -25,7 +23,6 @@ def metaspoilt():
 	print "===== Type 'msfconsole' to start."
 def nmap():
 	print '=====downloading Nmap\n'
-	os.system('apt update && apt upgrade')
 	os.system('apt install nmap')
 	print '===== Done'
 	print "===== Type 'nmap' to start."
@@ -39,16 +36,13 @@ def hulk():
 		os.system("cd ~;cd hulk;python hulk.py website")
 	else:
 		print "===download done\n"
-		time.sleep(3)
 		sys.exit()
 def zmap():
 	print "====downloading zmap\n"
-	os.system("apt upgarde && apt update")
-	os.sytem("sudo apt install zmap")
+	os.sytem("apt install zmap")
 	print"====downloading done"
 def scapy():
 	print"====downloading scapy\n"
-	os.system("apt upgarde && apt update")
 	os.system("git clone " + scapy)
 	permission = raw_input("do you want to run scapy [Y/N]")
 	if (permission == "Y" or permission == "y"):
@@ -56,47 +50,39 @@ def scapy():
 		os.system("./run_scapy")
 	else:
 		print "====download done"
-		time.sleep(3)
 		sys.exit()
 def subBrute_force():
 	print("====downloading subBrute-force")
-	os.system("apt upgrade && apt upgrade")
 	os.system("git clone " + subBrute_force)
 	permission = raw_input("do you want to test subbrute-force [Y/N]")
 	if (permission == "Y" or permission ==  "y"):
 		print"===downloading python-dnspython"
-		time.sleep(2)
 		os.sytem("sudo apt-get install python-dnspython")
 		website = raw_input("what website would you like to test\n")
 		os.system("./subbrute.py website")
 	else:
 		print "===download done"
-		time.sleep(3)
 		sys.exit()
 def sqlmap():
 	print ('===== downloading sqlmap')
-	os.system('apt update && apt upgrade')
 	# os.system('apt install git python2')
 	os.system('git clone sqlmap')
 	os.system('mv sqlmap ~')
 	print '====Done'
 def xshell():
-	print '=====downloading Xshell\n'
-	os.system("apt update && apt upgrade")
+	print '=====downloading Xshell\n'	
 	os.system("apt install lynx python2 figlet ruby php nano w3m")
 	os.system("git clone xshell")
 	os.system("mv Xshell ~")
 	print '======Done'
 def red_hawk():
 	print '=====downloading RED HAWK\n'
-	os.system('apt update && apt upgrade')
 	os.system('apt install git php')
 	os.system('git clone ' + red_hawk)
 	os.system('mv RED_HAWK ~')
 	print '======Done'
 def routerspoilt():
 	print '====Installing Routersploit\n'
-	os.system('apt update && apt upgrade')
 	os.system('apt install python2 git')
 	os.system('pip2 install requests')
 	os.system('git clone' + routersploit)
@@ -104,90 +90,40 @@ def routerspoilt():
 	print '=====Done'
 def hydra():
 	print "=====downloading hydra\n"
-	os.system("apt upgarde && apt update")
 	os.system("apt install hydra")
 	print"======done\n"
 def breacher():
 	print '=====downloading Breacher\n'
-	os.system('apt update && apt upgrade')
 	os.system('apt install git python2')
 	os.system('pip2 install requests argparse')
 	os.system('git clone' + breacher)
 	os.system('mv Breacher ~\n')
 	print '=====Done'
+def gobuster():
+        print '=====downloading GoBuster and installing Go'
+        os.system("apt install go")
+        os.system("go get github.com/OJ/gobuster")
 def batch_download():
 	permission = raw_input("this may lead  to high mobile traffic do you want to continue [Y/N]")
 	if (permission == "Y" or permission == "y"):
-		os.system("apt upgrade && apt update")
-    	try:
-			print"===downloading metaspoilt\n"
-			os.system("apt update && apt upgrade")
-			os.system("apt install git wget curl")
-			os.system("wget metaspoilt ")
-			time.sleep(3)
-			print '=====downloading Nmap\n'
-			os.system('apt update && apt upgrade')
-			os.system('apt install nmap')
-			print '===== Done\n\n'
-			time.sleep(3)
-			print"====downlaoding hulk\n"
-			os.system("git clone" + hulk)
-			os.system("mv Hulk ~\n")
-			print"===download done\n\n"
-			time.sleep(3)
-			print "====downloading zmap\n"
-			os.system("apt upgarde && apt update")
-			os.sytem("sudo apt install zmap")
-			time.sleep(3)
-			print"====downloading scapy\n"
-			os.system("apt upgarde && apt update")
-			os.system("git clone "+scapy)
-			time.sleep(3)
-			print"====downloading subBrute-force\n"
-			os.system("apt upgrade && apt upgrade")
-			os.system("git clone " + subBrute_force)
-			time.sleep(3)
-			print '===== downloading sqlmap\n'
-			os.system('apt update && apt upgrade')
-			os.system('apt install git python2')
-			os.system('git clone ' + sqlmap)
-			time.sleep(3)
-			print '=====downloading Xshell\n'
-			os.system("apt update && apt upgrade")
-			os.system("apt install lynx python2 figlet ruby php nano w3m")
-			os.system("git clone " + xshell)
-			os.system("mv Xshell ~")
-			print '======Done'
-			time.sleep(3)
-			print '=====downloading RED HAWK\n'
-			os.system('apt update && apt upgrade')
-			os.system('apt install git php')
-			os.system('git clone ' + red_hawk)
-			os.system('mv RED_HAWK ~')
-			print '======Done'
-			time.sleep(3)
-			print '====Installing Routersploit\n'
-			os.system('apt update && apt upgrade')
-			os.system('apt install python2 git')
-			os.system('pip2 install requests')
-			os.system('git clone ' + routersploit)
-			os.system('mv routersploit ~;cd ~/routersploit;pip2 install -r requirements.txt;termux-fix-shebang rsf.py\n')
-			print"===download done\n\n"
-			time.sleep(3)
-			print "=====downloading hydra\n"
-			os.system("apt upgarde && apt update")
-			os.system("apt install hydra")
-			print"======done\n"
-			time.sleep(3)
-			print '=====downloading Breacher\n'
-			os.system('apt update && apt upgrade')
-			os.system('apt install git python2')
-			os.system('pip2 install requests argparse')
-			os.system('git clone ' + breacher)
-			os.system('mv Breacher ~\n')
-			print"=== batch download done\n\n"
-	except Exception:
+            try:
+                metasploit()
+                nmap()
+                hulk()
+                zmap()
+                scapy()
+                subBrute_force()
+                sqlmap()
+                xshell()
+                red_hawk()
+                routerspoilt()
+                hydra()
+                breacher()
+                gobuster()
+            except Exception:
 			traceback.print_exc(file=sys.stdout)
-			print"Some Packages have not been downloaded\n Please check your Internet connection"
-			time.sleep(3)
-			return batch_download()
+			print "Some Packages have not been downloaded\n Please check your Internet connection"
+			return 
+        else:
+            print "Not running batch script"
+            sys.exit(1)
